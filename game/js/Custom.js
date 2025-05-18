@@ -11,7 +11,6 @@ function waitForElm(selector) {
 			}
 		});
 
-		// If you get "parameter 1 is not of type 'Node'" error, see https://stackoverflow.com/a/77855838/492336
 		observer.observe(document.body, {
 			childList: true,
 			subtree: true,
@@ -184,8 +183,10 @@ let checkInterval = setInterval(() => {
 	}
 }, 100);
 
+let checkInterval2 = null;
+
 function startInterval2() {
-	let checkInterval2 = setInterval(() => {
+	checkInterval2 = setInterval(() => {
 		/*console.log(
             "Checking if dAdventure is defined and saved level exists & is not blacklisted..."
         );*/
@@ -199,8 +200,6 @@ function startInterval2() {
 		}
 	}, 100);
 }
-
-checkInterval2;
 
 let playingSounds = [];
 function PlaySound2(path, name, loop = false) {
