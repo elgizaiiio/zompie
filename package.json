@@ -4,7 +4,9 @@
 	"description": "",
 	"scripts": {
 		"lint": "eslint .",
-		"fix": "eslint . --fix"
+		"fix": "eslint . --fix",
+		"build": "vite build",
+		"dev": "vite"
 	},
 	"keywords": [],
 	"author": "",
@@ -15,6 +17,7 @@
 		"eslint": "^9.26.0",
 		"eslint-plugin-eqeqeq-fix": "^1.0.3",
 		"globals": "^16.0.0",
-		"prettier": "^3.5.3"
+		"prettier": "^3.5.3",
+		"vite": "^5.0.0"
 	}
 }
